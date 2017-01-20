@@ -5,15 +5,15 @@ import {render} from 'react-dom';
 import {Provider} from 'react-redux';
 
 import store from './store';
-import Jokes from './components/Jokes';
-import Home from './components/Home';
+import App from './components/App';
+import EventsContainer from './containers/EventsContainer'
 
 render(
   <Provider store={store}>
     <Router history={browserHistory}>
-      <Route path="/" component={Home}>
-        <IndexRedirect to="/jokes" />
-        <Route path="/jokes" component={Jokes} />
+      <Route path="/" component={App}>
+        <IndexRedirect to="/events" />
+        <Route path="/events" component={EventsContainer} />
       </Route>
     </Router>
   </Provider>,
