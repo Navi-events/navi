@@ -1,12 +1,10 @@
 import React from 'react';
-import SingleEvent from './SingleEvent';
+import SingleEventContainer from '../containers/SingleEventContainer';
 
-const Events = () => {
+export default function Events (props) {
   return (
     <div>
-      <SingleEvent />
+      <SingleEventContainer />
     </div>
   );
-};
-
-export default Events;
+}

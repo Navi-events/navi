@@ -1,17 +1,18 @@
 import React from 'react';
 import EventsContainer from '../containers/EventsContainer';
 
-const App = () => {
+export default function App() {
   return (
     <main className="container-fluid">
-        <nav className="col-xs-9">
-          Map
-        </nav>
-        <aside className="col-xs-3">
+      <div className="row">
+        <section id="map" className="col-xs-8">
+          Map goes here
+        </section>
+        <section id="event-list" className="col-xs-4">
           <EventsContainer />
-        </aside>
+          <EventsContainer />
+        </section>
+      </div>
     </main>
   );
-};
-
-export default App;
+}
