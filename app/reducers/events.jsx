@@ -6,7 +6,6 @@ import axios from 'axios';
 export const LOAD_ALL_EVENTS = 'LOAD_ALL_EVENTS';
 
 
-
 //*********** Action Creators ***********:
 
 export const loadAllEvents = (allEvents) => ({ type: LOAD_ALL_EVENTS, allEvents});
@@ -19,7 +18,6 @@ export const getAllEvents = () => {
     axios.get('/api/events')
       .then(res => res.data)
       .then(allEvents => {
-        // console.log(allEvents)
         dispatch(loadAllEvents(allEvents));
       })
   }
@@ -28,7 +26,7 @@ export const getAllEvents = () => {
 
 //*********** Reducer ***********:
 
-const initialState = { allEvents: [] };
+const initialState = { allEvents: {} };
 
 const eventReducer = (state = initialState, action) => {
   const newState = Object.assign({}, state);
