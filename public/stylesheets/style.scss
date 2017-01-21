@@ -12,22 +12,14 @@ html {
 
 .gmap {
   height: 80vh;
-  width: 70%;
-}
-
-nav {
-
-}
-
-aside {
-  background-color: $aside-color;
-  height: 80vh;
-  border-radius: 10px
+  width: 66%;
+  padding: 0;
 }
 
 #event-list {
   background-color: $light-gray;
-  height: 100vh;
+  height: 400px;
+  padding: 0;
 }
 
 
