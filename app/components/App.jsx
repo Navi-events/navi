@@ -11,7 +11,6 @@ export default function App() {
         </section>
         <section id="event-list" className="col-xs-4">
           <EventsContainer />
-          <EventsContainer />
         </section>
       </div>
     </main>

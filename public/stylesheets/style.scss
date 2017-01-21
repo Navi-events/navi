@@ -1,7 +1,10 @@
-$hover-blue: #CCDDFF;
-$light-blue: #BBCCF6;
+$light-blue: #DDECF8;
+// $light-blue: #CCDDFF;
+$med-blue: #BBCCF6;
 $dark-blue: #435C9C;
 $light-gray: #DDDDDD;
+
+$main-color: #6394F8;
 
 html {
   box-sizing: border-box;
@@ -9,34 +12,33 @@ html {
 
 .gmap {
   height: 80vh;
-  width: 70%;
-}
-
-nav {
-
-}
-
-aside {
-  background-color: $aside-color;
-  height: 80vh;
-  border-radius: 10px
+  width: 66%;
+  padding: 0;
 }
 
 #event-list {
   background-color: $light-gray;
-  height: 100vh;
+  height: 400px;
+  padding: 0;
 }
 
 
-.single-event {
+.single-event0 {
   background-color: $light-blue;
-  border-style: solid;
-  border-width: thin;
   border-color: $dark-blue;
+  &:hover {
+    background-color: $med-blue;
+  }
 }
-.single-event:hover {
-  background-color: $hover-blue;
+
+.single-event1 {
+  background-color: white;
+  border-color: $dark-blue;
+  &:hover {
+    background-color: $med-blue;
+  }
 }
+
 
 .event-image {
   height: 100px;
@@ -51,4 +53,24 @@ aside {
 
 .event-details {
   margin: 0;
+}
+
+.button {
+  color: black;
+  text-align: center;
+  display: block;
+  padding: 0;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: none;
+
+  &:hover {
+    color: white;
+    background: $med-blue;
+  }
+}
+
+.remove-underline {
+  text-decoration: none;
 }
