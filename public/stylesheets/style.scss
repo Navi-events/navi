@@ -1,7 +1,14 @@
+@import "minitable";
+
 $aside-color: #BBCCF6;
 
 html {
   box-sizing: border-box;
+}
+
+.gmap {
+  height: 80vh;
+  width: 70%;
 }
 
 nav {
@@ -10,5 +17,6 @@ nav {
 
 aside {
   background-color: $aside-color;
-  height: 100vh;
+  height: 80vh;
+  border-radius: 10px
 }
