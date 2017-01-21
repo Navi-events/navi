@@ -7,7 +7,19 @@ html {
   box-sizing: border-box;
 }
 
-#map {
+.gmap {
+  height: 80vh;
+  width: 70%;
+}
+
+nav {
+
+}
+
+aside {
+  background-color: $aside-color;
+  height: 80vh;
+  border-radius: 10px
 }
 
 #event-list {
