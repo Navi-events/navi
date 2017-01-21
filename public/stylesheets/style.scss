@@ -1,6 +1,7 @@
-@import "minitable";
-
-$aside-color: #BBCCF6;
+$hover-blue: #CCDDFF;
+$light-blue: #BBCCF6;
+$dark-blue: #435C9C;
+$light-gray: #DDDDDD;
 
 html {
   box-sizing: border-box;
@@ -19,4 +20,35 @@ aside {
   background-color: $aside-color;
   height: 80vh;
   border-radius: 10px
+}
+
+#event-list {
+  background-color: $light-gray;
+  height: 100vh;
+}
+
+
+.single-event {
+  background-color: $light-blue;
+  border-style: solid;
+  border-width: thin;
+  border-color: $dark-blue;
+}
+.single-event:hover {
+  background-color: $hover-blue;
+}
+
+.event-image {
+  height: 100px;
+  width: 150px;
+  float: left;
+}
+
+.event-info {
+  display: inline;
+  width: 400px;
+}
+
+.event-details {
+  margin: 0;
 }

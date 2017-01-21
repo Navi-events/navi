@@ -8,12 +8,20 @@ import store from './store';
 import App from './components/App';
 import EventsContainer from './containers/EventsContainer';
 
+import SingleEventContainer from './containers/SingleEventContainer';
+
+import { getAllEvents } from './reducers/events';
+
+function onEventsEnter() {
+  store.dispatch(getAllEvents());
+}
+
 render(
   <Provider store={store}>
     <Router history={browserHistory}>
       <Route path="/" component={App}>
         <IndexRedirect to="/events" />
-        <Route path="/events" component={EventsContainer} />
+        <Route path="/events" component={EventsContainer} onEnter={onEventsEnter} />
       </Route>
     </Router>
   </Provider>,

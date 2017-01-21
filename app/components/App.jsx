@@ -2,17 +2,18 @@ import React from 'react';
 import Map from './Map';
 import EventsContainer from '../containers/EventsContainer';
 
-const App = () => {
+export default function App() {
   return (
     <main className="container-fluid">
-      <div className="col-md-9 gmap">
-        <Map />
+      <div className="row">
+        <section className="col-xs-8 gmap">
+          <Map />
+        </section>
+        <section id="event-list" className="col-xs-4">
+          <EventsContainer />
+          <EventsContainer />
+        </section>
       </div>
-      <aside className="col-md-3">
-        <EventsContainer />
-      </aside>
     </main>
   );
-};
-
-export default App;
+}
