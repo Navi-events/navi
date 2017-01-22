@@ -4,15 +4,16 @@ import EventsContainer from '../containers/EventsContainer';
 
 export default function App() {
   return (
-    <main className="container-fluid">
-      <div className="row">
-        <section className="col-xs-8 gmap">
-          <Map />
-        </section>
-        <section id="event-list" className="col-xs-4">
-          <EventsContainer />
-        </section>
-      </div>
+    <main>
+      <section id="title">
+        Events!
+      </section>
+      <section id="gmap">
+        <Map />
+      </section>
+      <section id="event-list">
+        <EventsContainer />
+      </section>
     </main>
   );
 }
