@@ -18,9 +18,11 @@ export const getAllEvents = () => {
   axios.get('/api/events')
     .then(res => {
       const allEvents = res.data;
-      // console.log('these are the events', allEvents);
-      dispatch(loadAllEvents(allEvents));
-    })
+      const allEventsSortedByDate = allEvents.sort((a, b) => {
+        return new Date(a.startDate).getTime() - new Date(b.startDate).getTime();
+      });
+      dispatch(loadAllEvents(allEventsSortedByDate));
+    });
   };
 };
 

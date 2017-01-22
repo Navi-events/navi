@@ -1,6 +1,8 @@
 import React from 'react';
 import SingleEventContainer from '../containers/SingleEventContainer';
 
+const key = 'ABCDEFGHIJK'.split('');
+
 export default function Events (props) {
   return (
     <div>
@@ -11,8 +13,9 @@ export default function Events (props) {
       </section>
       {
         props.allEvents && props.allEvents.map((event, index) => {
+          let hasTag = event.hasOwnProperty('lat') ? key.shift() : false;
           return (
-            <SingleEventContainer key={event.id} event={event} cssClass={props.getCssClassName(index)} />
+            <SingleEventContainer key={event.id} event={event} cssClass={props.getCssClassName(index)} tag={hasTag}/>
           );
         })
       }
