@@ -4,13 +4,10 @@ import SingleEventContainer from '../containers/SingleEventContainer';
 export default function Events (props) {
   return (
     <div>
-      <section id="current-event-title">
-        EventSelection
-        <ul>
-          <li>
-            NYC Events
-          </li>
-        </ul>
+      <section>
+        <h3 id="event-selection-title">Events Selection</h3>
+        <h5 className="event-categories">NYC Events</h5>
+
       </section>
       {
         props.allEvents && props.allEvents.map((event, index) => {

@@ -5,9 +5,10 @@ import EventsContainer from '../containers/EventsContainer';
 export default function App() {
   return (
     <main>
-      <section id="title">
-        Events!
-      </section>
+        <img src="/images/navi-hey-listen.png" alt="navi-logo" className="navi-logo" />
+        <section id="title-section">
+          <h1 id="title">Navi</h1>
+        </section>
       <section id="gmap">
         <Map />
       </section>

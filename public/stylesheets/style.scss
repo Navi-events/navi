@@ -3,52 +3,70 @@ $light-blue: #DDECF8;
 $med-blue: #BBCCF6;
 $dark-blue: #435C9C;
 $light-gray: #DDDDDD;
-
 $main-color: #6394F8;
+$navi-blue: #1387c6;
 
 html {
   box-sizing: border-box;
 }
 
-#title{
-  height: 8vh;
+#title-section{
+  height: 10vh;
   width: 100%;
-  font-size: 4em;
   text-align: center;
-  float: left;
+  background-color: $light-blue;
 }
 
+#title{
+  margin: 0;
+  color: $navi-blue;
+  font-family: "Times New Roman";
+  font-size: 80px;
+}
+
+
 #gmap {
-  height: 92vh;
+  height: 90vh;
   width: 66%;
   padding: 0;
   float: left;
 }
 
 #event-list {
-  height:92vh;
+  height:90vh;
   width: 34%;
   padding: 0;
   overflow: scroll;
   overflow-x: hidden;
 }
 
-// #current-event-title {
-//   text-align: center;
-//   font-size: 20px;
-// }
+#event-selection-title {
+  color: $navi-blue;
+  margin: 0;
+}
+.event-selection-title {
+  color: $navi-blue;
+  margin: 0;
+  list-style-type: : none;
+}
+
+.navi-logo {
+  width: 12.5vh;
+  height: 10vh;
+  float: left;
+}
 
 .event-title {
   margin: 0;
-  color: darkblue;
+  color: $navi-blue;
 }
 .line-title {
   margin: 0;
-  color: purple;
+  color: $navi-blue;
 }
 
 .single-event0 {
-  padding-bottom: 2em;
+  padding-bottom: 40px;
   background-color: rgba(0, 0, 0, .05);
   &:hover {
     background-color: rgba(0, 0, 0, .1);
@@ -56,7 +74,7 @@ html {
 }
 
 .single-event1 {
-  padding-bottom: 2em;
+  padding-bottom: 40px;
   background-color: white;
   &:hover {
     background-color: rgba(0, 0, 0, .2);
