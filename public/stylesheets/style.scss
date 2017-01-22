@@ -96,19 +96,3 @@ html {
   margin: 0;
   color: black;
 }
-
-.button {
-  color: black;
-  background-color: lightgreen;
-  text-align: center;
-  display: block;
-  padding: 0;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-
-  &:hover {
-    color: white;
-    background: darkgreen;
-  }
-}
