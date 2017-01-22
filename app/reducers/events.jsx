@@ -15,29 +15,26 @@ export const loadAllEvents = (allEvents) => ({ type: LOAD_ALL_EVENTS, allEvents}
 
 export const getAllEvents = () => {
   return (dispatch, getState) => {
-    axios.get('/api/events')
-      .then(res => res.data)
-      .then(allEvents => {
-        dispatch(loadAllEvents(allEvents));
-      })
-  }
-}
+  axios.get('/api/events')
+    .then(res => {
+      const allEvents = res.data;
+      // console.log('these are the events', allEvents);
+      dispatch(loadAllEvents(allEvents));
+    })
+  };
+};
 
 
 //*********** Reducer ***********:
 
-const initialState = { allEvents: {} };
+const eventReducer = (state = [], action) => {
 
-const eventReducer = (state = initialState, action) => {
-  const newState = Object.assign({}, state);
   switch (action.type) {
     case LOAD_ALL_EVENTS:
-      newState.allEvents = action.allEvents;
-      break;
+      return action.allEvents;
     default:
       return state;
   }
-  return newState;
-}
+};
 
 export default eventReducer;

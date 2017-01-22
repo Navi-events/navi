@@ -20,8 +20,7 @@ export default class SimpleMapPage extends PureComponent {
 
   static defaultProps = {
     center: [40.727, -73.99],
-    zoom: 13,
-    placesOfInterest: [ madisonSquare, bryantPark ]
+    zoom: 11,
   };
 
   constructor(props) {
@@ -29,13 +28,14 @@ export default class SimpleMapPage extends PureComponent {
   }
 
   render() {
-    const places = this.props.placesOfInterest.map(place => {
-      const { id, ...coords } = place;
+    const places = this.props.events.filter(event => event.hasOwnProperty('lat')).map((place, i) => {
+      const { id, lat, lng} = place;
+      const key = 'ABCDEFGHIJK'.split('');
       return (
-        <Marker {...coords} key={ id } text={ id } />
+        <Marker lat={lat} lng={lng} key={ id } text={ key[i] } />
       );
     });
-    console.log('this is the props', this.props.center)
+    console.log('this is the props', this.props)
 
     return (
        <GoogleMap
