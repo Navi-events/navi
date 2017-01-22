@@ -4,7 +4,7 @@ import {markerStyling, markerStylingOnHover} from './MarkerStyle';
 export default class TopPlaces extends PureComponent {
   static propTypes = {
     text: PropTypes.string,
-    $hover: PropTypes.bool        //hover from controllable
+    $hover: PropTypes.bool
   };
   constructor(props) {
     super(props);

@@ -7,7 +7,7 @@ function mapStateToProps (state, ownProps) {
   function getCssClassName(index) {
     return `single-event${index % 2}`;
   }
-  return { allEvents: state.events.allEvents, getCssClassName };
+  return { allEvents: state.events, getCssClassName };
 }
 
 function mapDispatchToProps (dispatch, ownProps) {
