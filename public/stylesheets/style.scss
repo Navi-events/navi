@@ -3,47 +3,88 @@ $light-blue: #DDECF8;
 $med-blue: #BBCCF6;
 $dark-blue: #435C9C;
 $light-gray: #DDDDDD;
-
 $main-color: #6394F8;
+$navi-blue: #1387c6;
 
 html {
   box-sizing: border-box;
 }
 
-.gmap {
-  height: 80vh;
+#title-section{
+  height: 10vh;
+  width: 100%;
+  text-align: center;
+  background-color: $light-blue;
+}
+
+#title{
+  margin: 0;
+  color: $navi-blue;
+  font-family: "Times New Roman";
+  font-size: 80px;
+}
+
+
+#gmap {
+  height: 90vh;
   width: 66%;
   padding: 0;
+  float: left;
 }
 
 #event-list {
-  background-color: $light-gray;
-  height: 400px;
+  height:90vh;
+  width: 34%;
   padding: 0;
+  overflow: scroll;
+  overflow-x: hidden;
 }
 
+#event-selection-title {
+  color: $navi-blue;
+  margin: 0;
+}
+.event-selection-title {
+  color: $navi-blue;
+  margin: 0;
+  list-style-type: : none;
+}
+
+.navi-logo {
+  width: 12.5vh;
+  height: 10vh;
+  float: left;
+}
+
+.event-title {
+  margin: 0;
+  color: $navi-blue;
+}
+.line-title {
+  margin: 0;
+  color: $navi-blue;
+}
 
 .single-event0 {
-  background-color: $light-blue;
-  border-color: $dark-blue;
+  padding-bottom: 40px;
+  background-color: rgba(0, 0, 0, .05);
   &:hover {
-    background-color: $med-blue;
+    background-color: rgba(0, 0, 0, .1);
   }
 }
 
 .single-event1 {
+  padding-bottom: 40px;
   background-color: white;
-  border-color: $dark-blue;
   &:hover {
-    background-color: $med-blue;
+    background-color: rgba(0, 0, 0, .2);
   }
 }
 
-
 .event-image {
-  height: 100px;
-  width: 150px;
-  float: left;
+  height: 150px;
+  width: 200px;
+  float: right;
 }
 
 .event-info {
@@ -53,24 +94,5 @@ html {
 
 .event-details {
   margin: 0;
-}
-
-.button {
   color: black;
-  text-align: center;
-  display: block;
-  padding: 0;
-  border: none;
-  border-radius: 5px;
-  text-decoration: none;
-  background-color: none;
-
-  &:hover {
-    color: white;
-    background: $med-blue;
-  }
-}
-
-.remove-underline {
-  text-decoration: none;
 }

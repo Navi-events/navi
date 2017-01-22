@@ -4,15 +4,17 @@ import EventsContainer from '../containers/EventsContainer';
 
 export default function App() {
   return (
-    <main className="container-fluid">
-      <div className="row">
-        <section className="col-xs-8 gmap">
-          <Map />
+    <main>
+        <img src="/images/navi-hey-listen.png" alt="navi-logo" className="navi-logo" />
+        <section id="title-section">
+          <h1 id="title">Navi</h1>
         </section>
-        <section id="event-list" className="col-xs-4">
-          <EventsContainer />
-        </section>
-      </div>
+      <section id="gmap">
+        <Map />
+      </section>
+      <section id="event-list">
+        <EventsContainer />
+      </section>
     </main>
   );
 }
