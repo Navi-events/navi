@@ -6,8 +6,8 @@ export default function Events (props) {
     <div>
       <section>
         <h3 id="event-selection-title">Events Selection</h3>
-        <h5 className="event-categories">NYC Events</h5>
-
+        <button type="button" className="btn btn-info btn-xs">NYC.gov</button>
+        <button type="button" className="btn btn-info btn-xs">Eventful</button>
       </section>
       {
         props.allEvents && props.allEvents.map((event, index) => {
