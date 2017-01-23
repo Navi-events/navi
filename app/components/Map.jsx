@@ -25,8 +25,6 @@ export default class SimpleMapPage extends PureComponent {
       );
     });
 
-    console.log('these are also meetups', this.props)
-
     return (
        <GoogleMap
         bootstrapURLKeys={{key: 'AIzaSyAFPCRFuQJTc36hz4mNLQm_jh1zHMIcne4', language: 'en'}}
