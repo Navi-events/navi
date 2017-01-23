@@ -13,7 +13,7 @@ export default function Eventful (props) {
       <p className="event-details"><b className="line-title">Date:</b> {new Date(props.event.start_time).toDateString()}</p>
       <p className="event-details"><b className="line-title">Time:</b> { props.event.start_time }</p>
       <p className="event-details"><b className="line-title">Borough:</b> { props.event.region_name }</p>
-      { props.event.description && <p className="event-details"><b className="line-title">Description: </b>{ props.event.description.slice(0, 100) + '...'}</p> }
+      { props.event.description && <p className="event-details"><b className="line-title">Description: </b>{ props.event.description.slice(0, 200) + '...'}</p> }
     </div>
   </div>
   );

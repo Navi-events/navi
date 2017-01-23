@@ -5,7 +5,7 @@ import Eventful from '../components/Eventful';
 import { getAllEventfulEvents } from '../reducers/eventful';
 
 function mapStateToProps (state, ownProps) {
-  const imageUrl = ownProps.event.image.medium.url;
+  const imageUrl = ownProps.event.image ? ownProps.event.image.medium.url : '/images/event-placeholder-image.gif';
   return { imageUrl };
 }
 

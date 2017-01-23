@@ -19,14 +19,16 @@ export default class Events extends React.Component {
   toggleNYCgov () {
     this.setState({
       NYCgovKey: [...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'],
-      showNYCgov: !this.state.showNYCgov
+      showNYCgov: !this.state.showNYCgov,
+      showEventful: false
     })
   }
 
   toggleEventful () {
     this.setState({
       eventfulKey: [...'ABCDEFGHIJKLMNOPQRSTUVWXYZ'],
-      showEventful: !this.state.showEventful
+      showEventful: !this.state.showEventful,
+      showNYCgov: false
     })
   }
 
