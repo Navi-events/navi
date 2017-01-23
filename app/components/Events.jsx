@@ -43,7 +43,8 @@ export default class Events extends React.Component {
 
     //Meetup constants
     const { allMeetups } = this.props;
-    let { meetupKey, toggleMeetup, showMeetup } = this.state;
+    let meetupKey = this.state.meetupKey;
+    let showMeetup = this.state.showMeetup;
     console.log('these are the meetups', allMeetups)
 
     return (
@@ -52,7 +53,7 @@ export default class Events extends React.Component {
           <h3 id="event-selection-title">Events Selection</h3>
           <button type="button" className="btn btn-info btn-xs" onClick={toggleNYCgov}>NYC.gov</button>
           <button type="button" className="btn btn-info btn-xs">Eventful</button>
-          <button type="button" className="btn btn-info btn-xs" onClick={toggleMeetup}>Meetups</button>
+          <button type="button" className="btn btn-info btn-xs" onClick={this.toggleMeetup}>Meetups</button>
         </section>
         {
           showNYCgov && allEvents && allEvents.map((event, index) => {

@@ -5,8 +5,8 @@ const mapStateToProps = (state, ownProps) => {
   const imageUrl = ownProps.meetup.photo_url ? ownProps.meetup.photo_url : '/images/event-placeholder-image.gif';
   let date = new Date(ownProps.meetup.time);
   const day = date.toDateString();
-  const time = day.getHours() + ':' + day.getMinutes();
-  const description = ownProps.meetup.description.replace(/<(?:.|\s)*?>/g, "").slice(0, 25);
+  const time = date.getHours() + ':' + date.getMinutes();
+  const description = ownProps.meetup.description;
   return {
     imageUrl,
     day,
@@ -24,3 +24,5 @@ export default connect(mapStateToProps)(SingleMeetup);
 //   let description = ownProps.event.shortDesc.replace(/\\/gi, '');
 //   return { boroughs, imageUrl, description };
 // }
+//
+// .replace(/<(?:.|\s)*?>/g, "").slice(0, 25);
