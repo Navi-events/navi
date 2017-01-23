@@ -30,12 +30,11 @@ export default class SimpleMapPage extends PureComponent {
   render() {
     const places = this.props.events.filter(event => event.hasOwnProperty('lat')).map((place, i) => {
       const { id, lat, lng} = place;
-      const key = 'ABCDEFGHIJK'.split('');
+      const key = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
       return (
         <Marker lat={lat} lng={lng} key={ id } text={ key[i] } />
       );
     });
-    console.log('this is the props', this.props)
 
     return (
        <GoogleMap

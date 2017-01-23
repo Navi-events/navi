@@ -11,9 +11,11 @@ import EventsContainer from './containers/EventsContainer';
 import SingleEventContainer from './containers/SingleEventContainer';
 
 import { getAllEvents } from './reducers/events';
+import { getAllEventfulEvents } from './reducers/eventful';
 
 function onEventsEnter() {
   store.dispatch(getAllEvents());
+  store.dispatch(getAllEventfulEvents());
 }
 
 render(
