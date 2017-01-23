@@ -1,6 +1,8 @@
 import React from 'react';
 import SingleEventContainer from '../containers/SingleEventContainer';
 import EventfulContainer from '../containers/EventfulContainer';
+import { loadMap } from '../reducers/mapState';
+import store from '../store';
 
 
 export default class Events extends React.Component {
@@ -22,6 +24,7 @@ export default class Events extends React.Component {
       showNYCgov: !this.state.showNYCgov,
       showEventful: false
     })
+    store.dispatch(loadMap(this.props.allEvents))
   }
 
   toggleEventful () {
@@ -30,6 +33,7 @@ export default class Events extends React.Component {
       showEventful: !this.state.showEventful,
       showNYCgov: false
     })
+    store.dispatch(loadMap(this.props.eventfulEvents))
   }
 
   render () {
