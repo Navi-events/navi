@@ -5,17 +5,6 @@ import controllable from 'react-controllables';
 import Marker from './Marker';
 import { M_SIZE } from './MarkerStyle';
 
-const bryantPark = {
-  id: 'A',
-  lat: 40.7536,
-  lng: -73.9832
-};
-const madisonSquare = {
-  id: 'B',
-  lat: 40.7505,
-  lng: -73.99
-}
-
 export default class SimpleMapPage extends PureComponent {
 
   static defaultProps = {
@@ -35,7 +24,8 @@ export default class SimpleMapPage extends PureComponent {
         <Marker lat={lat} lng={lng} key={ id } text={ key[i] } />
       );
     });
-    console.log('this is the props', this.props)
+
+    console.log('these are also meetups', this.props)
 
     return (
        <GoogleMap
@@ -50,22 +40,3 @@ export default class SimpleMapPage extends PureComponent {
   }
 }
 
-
-
-// <MyGreatPlace lat={59.955413} lng={30.337844} text={'A'} /* Kreyser Avrora */ />
-// <MyGreatPlace {...this.props.greatPlaceCoords} text={'B'} /* road circle */ />
-
-// import NodeGeocoder from 'node-geocoder';
-
-// const options = {
-//   provider: 'google',
-//   httpAdapter: 'https',
-//   apiKey: 'AIzaSyAFPCRFuQJTc36hz4mNLQm_jh1zHMIcne4',
-//   formatter: null
-// };
-
-// let geocoder = NodeGeocoder(options);
-
-// geocoder.geocode('5 hanover square new york', (err, res) => {
-//   console.log(res);
-// });

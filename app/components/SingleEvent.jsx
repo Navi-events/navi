@@ -1,5 +1,4 @@
 import React from 'react';
-import Marker from './Marker';
 import { listTag } from './ListMarker';
 
 export default function SingleEvent (props) {

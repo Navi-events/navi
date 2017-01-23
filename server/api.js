@@ -1,15 +1,15 @@
-'use strict'
+'use strict';
 
-const api = module.exports = require('express').Router()
+const api = module.exports = require('express').Router();
 
 
-api
-  .use('/events', require('./events'))
+api.use('/events', require('./events'));
+api.use('/meetups', require('./meetups'));
 
 // Send along any errors
 api.use((err, req, res, next) => {
-  res.status(500).send(err)
-})
+  res.status(500).send(err);
+});
 
 // No routes matched? 404.
-api.use((req, res) => res.status(404).end())
+api.use((req, res) => res.status(404).end());

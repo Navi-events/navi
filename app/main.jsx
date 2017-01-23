@@ -8,12 +8,12 @@ import store from './store';
 import App from './components/App';
 import EventsContainer from './containers/EventsContainer';
 
-import SingleEventContainer from './containers/SingleEventContainer';
-
 import { getAllEvents } from './reducers/events';
+import { getAllMeetups } from './reducers/MeetupsReducer';
 
 function onEventsEnter() {
   store.dispatch(getAllEvents());
+  store.dispatch(getAllMeetups());
 }
 
 render(
