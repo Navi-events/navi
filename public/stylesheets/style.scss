@@ -10,9 +10,15 @@ html {
   box-sizing: border-box;
 }
 
-#title-section{
+header {
   height: 10vh;
   width: 100%;
+  text-align: center;
+  background-color: $light-blue;
+}
+
+footer {
+  height: 5vh;
   text-align: center;
   background-color: $light-blue;
 }
@@ -21,27 +27,38 @@ html {
   margin: 0;
   color: $navi-blue;
   font-family: "Times New Roman";
-  font-size: 80px;
+  font-size: 9vh;
 }
 
 
 #gmap {
-  height: 90vh;
+  height: 85vh;
   width: 66%;
   padding: 0;
   float: left;
 }
 
 #event-list {
-  height:90vh;
+  height:85vh;
   width: 34%;
   padding: 0;
+  background-color: $light-blue;
   overflow: scroll;
   overflow-x: hidden;
 }
 
 #event-selection-title {
   color: $navi-blue;
+  margin: 0;
+}
+
+.eventful-badge {
+  position: absolute;
+  bottom: 1px;
+  right: 1px;
+}
+
+.eventful-msg {
   margin: 0;
 }
 .event-selection-title {
