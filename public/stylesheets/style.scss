@@ -26,8 +26,9 @@ footer {
 #title{
   margin: 0;
   color: $navi-blue;
-  font-family: "Times New Roman";
+  font-family: 'Philosopher', sans-serif;
   font-size: 9vh;
+  display: inline-block;
 }
 
 
@@ -49,7 +50,16 @@ footer {
 
 #event-selection-title {
   color: $navi-blue;
-  margin: 0;
+  margin: 0 10px;
+}
+
+.btn-success {
+  margin: 10px;
+}
+
+.btn-info {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .eventful-badge {
@@ -70,7 +80,7 @@ footer {
 .navi-logo {
   width: 12.5vh;
   height: 10vh;
-  float: left;
+  margin-top: -50px;
 }
 
 .event-title {
@@ -83,7 +93,7 @@ footer {
 }
 
 .single-event0 {
-  padding-bottom: 40px;
+  padding: 20px;
   background-color: rgba(0, 0, 0, .05);
   &:hover {
     background-color: rgba(0, 0, 0, .1);
@@ -91,7 +101,7 @@ footer {
 }
 
 .single-event1 {
-  padding-bottom: 40px;
+  padding: 20px;
   background-color: white;
   &:hover {
     background-color: rgba(0, 0, 0, .2);
@@ -112,4 +122,14 @@ footer {
 .event-details {
   margin: 0;
   color: black;
+}
+
+
+
+
+//Eventful specific styling
+.event-image {
+  height: 150px;
+  width: 150px;
+  float: right;
 }

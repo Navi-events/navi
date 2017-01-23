@@ -17,13 +17,6 @@ export default class SimpleMapPage extends PureComponent {
   }
 
   render() {
-    const places = this.props.events.filter(event => event.hasOwnProperty('lat')).map((place, i) => {
-      const { id, lat, lng} = place;
-      const key = 'ABCDEFGHIJK'.split('');
-      return (
-        <Marker lat={lat} lng={lng} key={ id } text={ key[i] } />
-      );
-    });
 
     return (
        <GoogleMap
@@ -32,9 +25,8 @@ export default class SimpleMapPage extends PureComponent {
         zoom={this.props.zoom}
         hoverDistance={ M_SIZE / 2 }
         >
-        {places}
+        {this.props.places ? this.props.places : null}
       </GoogleMap>
     );
   }
 }
-

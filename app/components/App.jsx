@@ -6,8 +6,8 @@ import EventfulContainer from '../containers/EventfulContainer';
 export default function App() {
   return (
     <main>
-      <img src="/images/navi-hey-listen.png" alt="navi-logo" className="navi-logo" />
         <header>
+        <img src="/images/navi-hey-listen.png" alt="navi-logo" className="navi-logo" />
           <h1 id="title">Navi</h1>
         </header>
       <section id="gmap">

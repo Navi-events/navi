@@ -10,10 +10,12 @@ import EventsContainer from './containers/EventsContainer';
 
 import { getAllEvents } from './reducers/events';
 import { getAllMeetups } from './reducers/MeetupsReducer';
+import { getAllEventfulEvents } from './reducers/eventful';
 
 function onEventsEnter() {
   store.dispatch(getAllEvents());
   store.dispatch(getAllMeetups());
+  store.dispatch(getAllEventfulEvents());
 }
 
 render(

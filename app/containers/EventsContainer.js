@@ -10,6 +10,7 @@ function mapStateToProps (state, ownProps) {
   return {
     allEvents: state.events,
     allMeetups: state.meetups,
+    eventfulEvents: state.eventful,
     getCssClassName
   };
 }
