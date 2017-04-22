@@ -1,0 +1,101 @@
+html {
+  box-sizing: border-box; }
+
+header {
+  height: 10vh;
+  width: 100%;
+  text-align: center;
+  background-color: #DDECF8; }
+
+footer {
+  height: 5vh;
+  text-align: center;
+  background-color: #DDECF8; }
+
+#title {
+  margin: 0;
+  color: #1387c6;
+  font-family: 'Philosopher', sans-serif;
+  font-size: 9vh;
+  display: inline-block; }
+
+#gmap {
+  height: 85vh;
+  width: 66%;
+  padding: 0;
+  float: left; }
+
+#event-list {
+  height: 85vh;
+  width: 34%;
+  padding: 0;
+  background-color: #DDECF8;
+  overflow: scroll;
+  overflow-x: hidden; }
+
+#event-selection-title {
+  color: #1387c6;
+  margin: 0 10px; }
+
+.btn-success {
+  margin: 10px; }
+
+.btn-info {
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.eventful-badge {
+  position: absolute;
+  bottom: 1px;
+  right: 1px; }
+
+.eventful-msg {
+  margin: 0; }
+
+.event-selection-title {
+  color: #1387c6;
+  margin: 0;
+  list-style-type: none; }
+
+.navi-logo {
+  width: 12.5vh;
+  height: 10vh;
+  margin-top: -50px; }
+
+.event-title {
+  margin: 0;
+  color: #1387c6; }
+
+.line-title {
+  margin: 0;
+  color: #1387c6; }
+
+.single-event0 {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.05); }
+  .single-event0:hover {
+    background-color: rgba(0, 0, 0, 0.1); }
+
+.single-event1 {
+  padding: 20px;
+  background-color: white; }
+  .single-event1:hover {
+    background-color: rgba(0, 0, 0, 0.2); }
+
+.event-image {
+  height: 150px;
+  width: 200px;
+  float: right; }
+
+.event-info {
+  display: inline;
+  width: 400px; }
+
+.event-details {
+  margin: 0;
+  color: black; }
+
+.event-image {
+  height: 150px;
+  width: 150px;
+  float: right; }
