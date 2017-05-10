@@ -32089,11 +32089,12 @@
 	      null,
 	      _react2.default.createElement('img', { src: '/images/navi-hey-listen.png', alt: 'navi-logo', className: 'navi-logo' }),
 	      _react2.default.createElement(
-	        'h1',
+	        'p',
 	        { id: 'title' },
 	        'Navi'
 	      )
 	    ),
+	    _react2.default.createElement('hr', null),
 	    _react2.default.createElement(
 	      'section',
 	      { id: 'gmap' },
@@ -32108,13 +32109,19 @@
 	      'footer',
 	      null,
 	      _react2.default.createElement('span', { className: 'glyphicon glyphicon-wrench' }),
-	      ' with ',
+	      ' \xA0 with \xA0 ',
 	      _react2.default.createElement('span', { className: 'glyphicon glyphicon-heart' }),
-	      ' by Sean Martin and Jimmy Wang at ',
+	      '\xA0 by Sean Martin and Jimmy Wang at \xA0',
 	      _react2.default.createElement(
 	        'a',
 	        { href: 'http://fullstackacademy.com' },
-	        'Fullstack Academy of Code'
+	        ' Fullstack Academy of Code '
+	      ),
+	      ' ',
+	      _react2.default.createElement(
+	        'p',
+	        null,
+	        '\xA0'
 	      ),
 	      ' ',
 	      _react2.default.createElement('span', { className: 'glyphicon glyphicon-education' }),

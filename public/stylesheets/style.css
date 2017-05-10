@@ -1,32 +1,51 @@
 html {
   box-sizing: border-box; }
 
+main hr {
+  margin: 0;
+  border-color: #317eac; }
+
 header {
-  height: 10vh;
+  height: 150px;
   width: 100%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #DDECF8; }
+
+#header-content {
+  text-align: center; }
 
 footer {
-  height: 5vh;
-  text-align: center;
-  background-color: #DDECF8; }
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #DDECF8;
+  background-color: #317eac; }
+  footer a {
+    color: #DDECF8;
+    text-decoration: underline; }
+    footer a:visited {
+      color: #DDECF8; }
+    footer a:hover {
+      color: #DDECF8; }
 
 #title {
-  margin: 0;
-  color: #1387c6;
+  color: #317eac;
   font-family: 'Philosopher', sans-serif;
-  font-size: 9vh;
-  display: inline-block; }
+  font-size: 110px;
+  text-shadow: 2px 2px black;
+  display: inline; }
 
 #gmap {
-  height: 85vh;
+  height: calc(100vh - 200px);
   width: 66%;
   padding: 0;
   float: left; }
 
 #event-list {
-  height: 85vh;
+  height: calc(100vh - 200px);
   width: 34%;
   padding: 0;
   background-color: #DDECF8;
@@ -34,7 +53,7 @@ footer {
   overflow-x: hidden; }
 
 #event-selection-title {
-  color: #1387c6;
+  color: #317eac;
   margin: 0 10px; }
 
 .btn-success {
@@ -47,28 +66,27 @@ footer {
 .eventful-badge {
   position: absolute;
   bottom: 1px;
-  right: 1px; }
+  right: 10px; }
 
 .eventful-msg {
   margin: 0; }
 
 .event-selection-title {
-  color: #1387c6;
+  color: #317eac;
   margin: 0;
   list-style-type: none; }
 
 .navi-logo {
-  width: 12.5vh;
-  height: 10vh;
-  margin-top: -50px; }
+  width: 125px;
+  height: 100px; }
 
 .event-title {
   margin: 0;
-  color: #1387c6; }
+  color: #317eac; }
 
 .line-title {
   margin: 0;
-  color: #1387c6; }
+  color: #317eac; }
 
 .single-event0 {
   padding: 20px;
