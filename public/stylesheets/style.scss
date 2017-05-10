@@ -1,11 +1,5 @@
 $light-blue: #DDECF8;
-// $light-blue: #CCDDFF;
-// $med-blue: #BBCCF6;
-$dark-blue: #435C9C;
-$light-gray: #DDDDDD;
-// $main-color: #6394F8;
 $navi-blue: #317eac;
-// $navi-blue: #1387c6;
 
 html {
   box-sizing: border-box;
@@ -25,10 +19,6 @@ header {
   justify-content: center;
   align-items: center;
   background-color: $light-blue;
-}
-
-#header-content {
-  text-align: center;
 }
 
 footer {

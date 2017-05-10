@@ -13,9 +13,6 @@ header {
   align-items: center;
   background-color: #DDECF8; }
 
-#header-content {
-  text-align: center; }
-
 footer {
   height: 50px;
   display: flex;
