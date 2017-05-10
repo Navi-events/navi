@@ -1,46 +1,63 @@
 $light-blue: #DDECF8;
-// $light-blue: #CCDDFF;
-$med-blue: #BBCCF6;
-$dark-blue: #435C9C;
-$light-gray: #DDDDDD;
-$main-color: #6394F8;
-$navi-blue: #1387c6;
+$navi-blue: #317eac;
 
 html {
   box-sizing: border-box;
 }
 
+main {
+  hr {
+    margin: 0;
+    border-color: $navi-blue;
+  }
+}
+
 header {
-  height: 10vh;
+  height: 150px;
   width: 100%;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: $light-blue;
 }
 
 footer {
-  height: 5vh;
-  text-align: center;
-  background-color: $light-blue;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $light-blue;
+  background-color: $navi-blue;
+  a {
+    color: $light-blue;
+    text-decoration: underline;
+    &:visited {
+      color: $light-blue;
+    }
+    &:hover {
+      color: $light-blue;
+    }
+  }
 }
 
 #title{
-  margin: 0;
   color: $navi-blue;
   font-family: 'Philosopher', sans-serif;
-  font-size: 9vh;
-  display: inline-block;
+  font-size: 110px;
+  text-shadow: 2px 2px black;
+  display: inline;
 }
 
 
 #gmap {
-  height: 85vh;
+  height: calc(100vh - 200px);
   width: 66%;
   padding: 0;
   float: left;
 }
 
 #event-list {
-  height:85vh;
+  height: calc(100vh - 200px);
   width: 34%;
   padding: 0;
   background-color: $light-blue;
@@ -65,7 +82,7 @@ footer {
 .eventful-badge {
   position: absolute;
   bottom: 1px;
-  right: 1px;
+  right: 10px;
 }
 
 .eventful-msg {
@@ -78,9 +95,9 @@ footer {
 }
 
 .navi-logo {
-  width: 12.5vh;
-  height: 10vh;
-  margin-top: -50px;
+  width: 125px;
+  height: 100px;
+  // margin-top: -50px;
 }
 
 .event-title {
@@ -123,8 +140,6 @@ footer {
   margin: 0;
   color: black;
 }
-
-
 
 
 //Eventful specific styling
